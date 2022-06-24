@@ -40,9 +40,10 @@
             // okBtn
             // 
             this.okBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okBtn.Location = new System.Drawing.Point(310, 324);
+            this.okBtn.Location = new System.Drawing.Point(220, 180);
+            this.okBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.okBtn.Name = "okBtn";
-            this.okBtn.Size = new System.Drawing.Size(112, 34);
+            this.okBtn.Size = new System.Drawing.Size(78, 28);
             this.okBtn.TabIndex = 0;
             this.okBtn.Text = "Restore";
             this.okBtn.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // cancelBtn
             // 
             this.cancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cancelBtn.Location = new System.Drawing.Point(310, 364);
+            this.cancelBtn.Location = new System.Drawing.Point(220, 212);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(112, 34);
+            this.cancelBtn.Size = new System.Drawing.Size(78, 28);
             this.cancelBtn.TabIndex = 1;
             this.cancelBtn.Text = "Close";
             this.cancelBtn.UseVisualStyleBackColor = true;
@@ -66,11 +68,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buListBox.FormattingEnabled = true;
             this.buListBox.IntegralHeight = false;
-            this.buListBox.ItemHeight = 25;
-            this.buListBox.Location = new System.Drawing.Point(12, 12);
+            this.buListBox.ItemHeight = 15;
+            this.buListBox.Location = new System.Drawing.Point(8, 7);
+            this.buListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buListBox.Name = "buListBox";
             this.buListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.buListBox.Size = new System.Drawing.Size(292, 386);
+            this.buListBox.Size = new System.Drawing.Size(206, 233);
             this.buListBox.TabIndex = 2;
             this.buListBox.SelectedIndexChanged += new System.EventHandler(this.buListBox_SelectedIndexChanged);
             // 
@@ -78,9 +81,10 @@
             // 
             this.autoRadio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.autoRadio.AutoSize = true;
-            this.autoRadio.Location = new System.Drawing.Point(310, 12);
+            this.autoRadio.Location = new System.Drawing.Point(219, 7);
+            this.autoRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.autoRadio.Name = "autoRadio";
-            this.autoRadio.Size = new System.Drawing.Size(76, 29);
+            this.autoRadio.Size = new System.Drawing.Size(51, 19);
             this.autoRadio.TabIndex = 3;
             this.autoRadio.TabStop = true;
             this.autoRadio.Text = "Auto";
@@ -91,9 +95,10 @@
             // 
             this.mileStoneRadio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.mileStoneRadio.AutoSize = true;
-            this.mileStoneRadio.Location = new System.Drawing.Point(310, 47);
+            this.mileStoneRadio.Location = new System.Drawing.Point(220, 28);
+            this.mileStoneRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mileStoneRadio.Name = "mileStoneRadio";
-            this.mileStoneRadio.Size = new System.Drawing.Size(122, 29);
+            this.mileStoneRadio.Size = new System.Drawing.Size(82, 19);
             this.mileStoneRadio.TabIndex = 4;
             this.mileStoneRadio.TabStop = true;
             this.mileStoneRadio.Text = "Milestones";
@@ -103,9 +108,10 @@
             // deleteBtn
             // 
             this.deleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteBtn.Location = new System.Drawing.Point(310, 204);
+            this.deleteBtn.Location = new System.Drawing.Point(220, 119);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(112, 34);
+            this.deleteBtn.Size = new System.Drawing.Size(78, 28);
             this.deleteBtn.TabIndex = 5;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -114,16 +120,17 @@
             // timeLabel
             // 
             this.timeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.timeLabel.Location = new System.Drawing.Point(310, 123);
+            this.timeLabel.Location = new System.Drawing.Point(217, 74);
+            this.timeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(112, 71);
+            this.timeLabel.Size = new System.Drawing.Size(78, 43);
             this.timeLabel.TabIndex = 6;
             // 
             // SelectBackupForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 410);
+            this.ClientSize = new System.Drawing.Size(304, 246);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.mileStoneRadio);
@@ -131,6 +138,7 @@
             this.Controls.Add(this.buListBox);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.okBtn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SelectBackupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Backups";
