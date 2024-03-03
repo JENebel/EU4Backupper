@@ -6,6 +6,19 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>EUICO.ico</ApplicationIcon>
+    <PackageIcon>EUICO.ico</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="EUICO.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Pictures\EUICO.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

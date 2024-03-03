@@ -28,7 +28,7 @@ namespace EU4Backupper
                 if (line.StartsWith("autoStart")) autoStart = bool.Parse(line.Substring(11));
                 if (line.StartsWith("autoReboot")) autoReboot = bool.Parse(line.Substring(12));
                 if (line.StartsWith("saveFolder")) saveGameLocation = line.Substring(12);
-                if (line.StartsWith("gameExe")) gameExe = line.Substring(9);
+                if (line.StartsWith("steamExe")) gameExe = line.Substring(10);
                 if (line.StartsWith("interval")) autoSaveInterval = int.Parse(line.Substring(10));
             }
 
@@ -43,7 +43,7 @@ namespace EU4Backupper
             lines.Add("autoStart: " + autoStart.ToString());
             lines.Add("autoReboot: " + autoReboot.ToString());
             lines.Add("saveFolder: " + saveGameLocation);
-            lines.Add("gameExe: " + gameExe);
+            lines.Add("steamExe: " + gameExe);
             lines.Add("interval: " + autoSaveInterval);
 
             File.WriteAllLines("./mem.txt", lines);
